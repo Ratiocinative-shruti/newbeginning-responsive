@@ -78,6 +78,22 @@ body.active{
         transition: 0.7s ease-out;
         color: #682e7a;
 }
+.hamburger-icon.b.active {
+    opacity: 0;
+}
+.hamburger-icon.a.active {
+    transform: rotate(45deg);
+    position: relative;
+    top: 24px;
+    left: 1px;
+    background-color: #682e7a !important;
+}
+.hamburger-icon.c.active   {
+    transition-delay: rotate;
+    transform: rotate(-45deg);
+    margin-top: -25px;
+    background-color: #682e7a !important;
+}
 .twitter-img {
     margin-left: 8px;
     transition: 0.7s ease-in;
@@ -91,7 +107,7 @@ body.active{
     content: '';
     bottom: -24px;
     height: 1px;
-    width: 100%;
+    width: 97%;
     position:absolute;
     background-color: #373333;
 }
